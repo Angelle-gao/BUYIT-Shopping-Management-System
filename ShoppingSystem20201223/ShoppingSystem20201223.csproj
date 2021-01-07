@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BD698E4-73FF-462F-B72F-D8AAFABCBEAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShoppingSystem20201223</RootNamespace>
+    <AssemblyName>ShoppingSystem20201223</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_goods.Designer.cs">
+      <DependentUpon>add_goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="after_sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="after_sales.Designer.cs">
+      <DependentUpon>after_sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="history_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="history_order.Designer.cs">
+      <DependentUpon>history_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manage_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manage_user.Designer.cs">
+      <DependentUpon>manage_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_process_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process_4.Designer.cs">
+      <DependentUpon>order_process_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_process_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process_1.Designer.cs">
+      <DependentUpon>order_process_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GOODSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="order_process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process.Designer.cs">
+      <DependentUpon>order_process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_process_0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process_0.Designer.cs">
+      <DependentUpon>order_process_0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_process_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_process_3.Designer.cs">
+      <DependentUpon>order_process_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receive_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receive_goods.Designer.cs">
+      <DependentUpon>receive_goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_password.Designer.cs">
+      <DependentUpon>update_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_password_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_password_manager.Designer.cs">
+      <DependentUpon>update_password_manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_comment.Designer.cs">
+      <DependentUpon>user_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_order.Designer.cs">
+      <DependentUpon>user_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="GOODSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GOODSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm_manager.Designer.cs">
+      <DependentUpon>mainForm_manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_login.Designer.cs">
+      <DependentUpon>manager_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoppingCar.Designer.cs">
+      <DependentUpon>ShoppingCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_goods.resx">
+      <DependentUpon>add_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="after_sales.resx">
+      <DependentUpon>after_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history_order.resx">
+      <DependentUpon>history_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage_user.resx">
+      <DependentUpon>manage_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process_4.resx">
+      <DependentUpon>order_process_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process_1.resx">
+      <DependentUpon>order_process_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process.resx">
+      <DependentUpon>order_process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process_0.resx">
+      <DependentUpon>order_process_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_process_3.resx">
+      <DependentUpon>order_process_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receive_goods.resx">
+      <DependentUpon>receive_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_password.resx">
+      <DependentUpon>update_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_password_manager.resx">
+      <DependentUpon>update_password_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_comment.resx">
+      <DependentUpon>user_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_order.resx">
+      <DependentUpon>user_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm_manager.resx">
+      <DependentUpon>mainForm_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_login.resx">
+      <DependentUpon>manager_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoppingCar.resx">
+      <DependentUpon>ShoppingCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GOODSDataSet.xsc">
+      <DependentUpon>GOODSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet.xss">
+      <DependentUpon>GOODSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet1.xsc">
+      <DependentUpon>GOODSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet1.xss">
+      <DependentUpon>GOODSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet2.xsc">
+      <DependentUpon>GOODSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet2.xss">
+      <DependentUpon>GOODSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet3.xsc">
+      <DependentUpon>GOODSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet3.xss">
+      <DependentUpon>GOODSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet4.xsc">
+      <DependentUpon>GOODSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet4.xss">
+      <DependentUpon>GOODSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet5.xsc">
+      <DependentUpon>GOODSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet5.xss">
+      <DependentUpon>GOODSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet6.xsc">
+      <DependentUpon>GOODSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet6.xss">
+      <DependentUpon>GOODSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet7.xsc">
+      <DependentUpon>GOODSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GOODSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GOODSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GOODSDataSet7.xss">
+      <DependentUpon>GOODSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018122623054983146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\d1.ico" />
+    <None Include="Resources\psc %281%29.jpg" />
+    <None Include="Resources\pic3.jpg" />
+    <None Include="Resources\pic4.png" />
+    <None Include="Resources\pic8.jpg" />
+    <None Include="Resources\pic6.jpg" />
+    <None Include="Resources\pic5.jpg" />
+    <None Include="Resources\pic7.jpg" />
+    <None Include="Resources\pic51.jpg" />
+    <None Include="Resources\pic10.jpg" />
+    <None Include="Resources\pic9.png" />
+    <None Include="Resources\pic12.jpg" />
+    <None Include="Resources\pic52.jpg" />
+    <None Include="Resources\pic11.jpg" />
+    <None Include="Resources\pic15.jpeg" />
+    <None Include="Resources\pic16.jpg" />
+    <None Include="Resources\pic18.jpg" />
+    <None Include="Resources\pic17.jpg" />
+    <Content Include="Resources\psc %282%29.jpg" />
+    <Content Include="Resources\psc.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
